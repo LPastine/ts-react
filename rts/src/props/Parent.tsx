@@ -1,7 +1,12 @@
-import { Child } from './Child';
+import { ChildAsFC } from './Child';
 
 const Parent = () => {
-  return <Child color="blue" />;
+  return (
+    <ChildAsFC color="blue" onClick={() => console.log('Clicked')}>
+      As we declared this component as a React.FC it expects to receive children
+      props.
+    </ChildAsFC>
+  );
 };
 
 export default Parent;
