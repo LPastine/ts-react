@@ -5,7 +5,7 @@ const App = () => {
     <div>
       <h1>Hi there!</h1>
     </div>
-  )
-}
+  );
+};
 
-ReactDOM.render(<App />, document.querySelector('#root'))
+ReactDOM.render(<App />, document.querySelector('#root'));
